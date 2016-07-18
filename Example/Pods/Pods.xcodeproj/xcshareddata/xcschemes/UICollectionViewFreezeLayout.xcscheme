@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DDDF1ABE25E0424C551739F2'
+               BlueprintIdentifier = '30B6F4F8E69B711C105D967B'
                BlueprintName = 'UICollectionViewFreezeLayout'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'UICollectionViewFreezeLayout.framework'>

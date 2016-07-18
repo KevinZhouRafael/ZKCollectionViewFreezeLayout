@@ -1,18 +1,18 @@
 {
   "name": "UICollectionViewFreezeLayout",
   "version": "0.1.0",
-  "summary": "A short description of UICollectionViewFreezeLayout.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/UICollectionViewFreezeLayout",
+  "summary": "A layout that can set freeze coloums number and row numbers in UICollectionView., and scroll both Horizontal and Vertical direct.",
+  "description": "The UICollectionViewFreezeLayout extends UICollectionViewLayout.\n\nSupport both Horizontal and Vertical scroll direct.\n\nCan set freeze coloums numbers and rows numbers.",
+  "homepage": "https://github.com/KevinChouRafael/UICollectionViewFreezeLayout",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "rafael zhou": "2008zkapie@163.com"
+    "rafael zhou": "wumingapie@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/UICollectionViewFreezeLayout.git",
+    "git": "https://github.com/KevinChouRafael/UICollectionViewFreezeLayout.git",
     "tag": "0.1.0"
   },
   "platforms": {

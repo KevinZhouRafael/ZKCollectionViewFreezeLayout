@@ -1,9 +1,8 @@
 //
 //  UICollectionViewFreezeLayout.swift
-//  Waka
 //
 //  Created by rafael on 5/6/16.
-//  Copyright © 2016 Waka. All rights reserved.
+//  Copyright © 2016 Rafael. All rights reserved.
 //
 
 import UIKit
@@ -23,8 +22,7 @@ import UIKit
     
     
     private var cellAttrsDictionary = Dictionary<NSIndexPath, UICollectionViewLayoutAttributes>()
-    private var cellAttrsDictionaryConst = Dictionary<NSIndexPath, UICollectionViewLayoutAttributes>() //初始化后，拖动也不会变的数据。用来保存初始布局。
-    
+    private var cellAttrsDictionaryConst = Dictionary<NSIndexPath, UICollectionViewLayoutAttributes>()
     public var freezeColum:Int = 1
     public var freezeRow:Int = 1
     
