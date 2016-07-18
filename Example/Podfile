@@ -1,11 +1,6 @@
 use_frameworks!
 
-target 'UICollectionViewFreezeLayout_Example' do
-  pod 'UICollectionViewFreezeLayout', :path => '../'
+pod 'UICollectionViewFreezeLayout', :path => '../'
 
-  target 'UICollectionViewFreezeLayout_Tests' do
-    inherit! :search_paths
 
     
-  end
-end

@@ -1,0 +1,14 @@
+PODS:
+  - UICollectionViewFreezeLayout (0.1.0)
+
+DEPENDENCIES:
+  - UICollectionViewFreezeLayout (from `../`)
+
+EXTERNAL SOURCES:
+  UICollectionViewFreezeLayout:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UICollectionViewFreezeLayout: 89ff9bd1f9797a28fcb824aec21e9adb3f8fcf61
+
+COCOAPODS: 0.39.0

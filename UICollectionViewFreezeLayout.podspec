@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'UICollectionViewFreezeLayout'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of UICollectionViewFreezeLayout.'
+  s.summary          = 'A layout that can set freeze coloums number and row numbers in UICollectionView., and scroll both Horizontal and Vertical direct.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+The UICollectionViewFreezeLayout extends UICollectionViewLayout.
+
+Support both Horizontal and Vertical scroll direct.
+
+Can set freeze coloums numbers and rows numbers.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/UICollectionViewFreezeLayout'
+  s.homepage         = 'https://github.com/KevinChouRafael/UICollectionViewFreezeLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'rafael zhou' => '2008zkapie@163.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/UICollectionViewFreezeLayout.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'rafael zhou' => 'wumingapie@gmail.com' }
+  s.source           = { :git => 'https://github.com/KevinChouRafael/UICollectionViewFreezeLayout.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/wumingapie'
 
   s.ios.deployment_target = '8.0'
 

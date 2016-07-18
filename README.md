@@ -5,6 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/UICollectionViewFreezeLayout.svg?style=flat)](http://cocoapods.org/pods/UICollectionViewFreezeLayout)
 [![Platform](https://img.shields.io/cocoapods/p/UICollectionViewFreezeLayout.svg?style=flat)](http://cocoapods.org/pods/UICollectionViewFreezeLayout)
 
+## Description
+
+The UICollectionViewFreezeLayout extends UICollectionViewLayout. 
+
+Support both Horizontal and Vertical scroll direct.
+
+Can set freeze coloums numbers and rows numbers.
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,7 +31,7 @@ pod "UICollectionViewFreezeLayout"
 
 ## Author
 
-rafael zhou, 2008zkapie@163.com
+rafael zhou, wumingapie@gmail.com
 
 ## License
 
