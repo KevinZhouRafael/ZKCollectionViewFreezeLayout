@@ -10,6 +10,19 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>092F8D716281D6A64CE37E0AD78CE896</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UICollectionViewFreezeLayout-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
 		<dict>
 			<key>buildSettings</key>
@@ -78,34 +91,31 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>1E17A30AA612CB2D8A75297405A04E63</key>
+		<key>117FB5D1ADD609F23EF66126FEE34C74</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>971BF3DEF83690FB6EEDCD28F1CC3078</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>UICollectionViewFreezeLayout</string>
+			<string>UICollectionViewFreezeLayout.swift</string>
 			<key>path</key>
-			<string>UICollectionViewFreezeLayout</string>
+			<string>UICollectionViewFreezeLayout/Classes/UICollectionViewFreezeLayout.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>239EE1BA16137D533C5C560B0B318E50</key>
+		<key>1D0CD3865CC1BD67F5A005CAF0DD4006</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>2C222B1DB8B367A67935ABA54068B9AB</string>
-				<string>1E17A30AA612CB2D8A75297405A04E63</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>UICollectionViewFreezeLayout</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>../..</string>
+			<string>UICollectionViewFreezeLayout.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -119,26 +129,6 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>Pods-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2C222B1DB8B367A67935ABA54068B9AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CD409C8617B7DA5667477F186031B30F</string>
-				<string>741D88C0A484F9C84A78B2F55DCFFD27</string>
-				<string>71161B70AA43D9D5636A05E1C6AB0153</string>
-				<string>AAF9D1982B718CE69983DAF14DB3CA68</string>
-				<string>3237D0F014E41FF90FF096D9E9A1AC19</string>
-				<string>7D9033E3A54EC5123F6CEA7217C39ABF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/UICollectionViewFreezeLayout</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -218,18 +208,12 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>3237D0F014E41FF90FF096D9E9A1AC19</key>
+		<key>3366753C711164071304A35F223254DA</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>69EF0CE63A9CD547AA73C2D5B1FE7031</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UICollectionViewFreezeLayout-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>3805A978622C3FB29CA00D97A3C8D475</key>
 		<dict>
@@ -309,12 +293,18 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>4ADD706E2C912A2013EADAEEFC58158B</key>
+		<key>4FE503E609D8F23D9050AF5C82A0505E</key>
 		<dict>
-			<key>fileRef</key>
-			<string>B542F430DDC4D50EB52F68B65CC7CF29</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UICollectionViewFreezeLayout-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>541BBDA1BD80D59143215117DB9EBC24</key>
 		<dict>
@@ -328,6 +318,13 @@
 			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>54F95202E697AE5BACF0B154D3688532</key>
+		<dict>
+			<key>fileRef</key>
+			<string>117FB5D1ADD609F23EF66126FEE34C74</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>552D02D5BA751AC2E8790D2811D496CA</key>
 		<dict>
@@ -431,19 +428,6 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>5DF3E04B83BB9AB5FC5CFA2162F6274D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>239EE1BA16137D533C5C560B0B318E50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>63EF6FE79125E83444A3D4E7D46F2A72</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -508,23 +492,23 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>71161B70AA43D9D5636A05E1C6AB0153</key>
+		<key>69EF0CE63A9CD547AA73C2D5B1FE7031</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>UICollectionViewFreezeLayout.xcconfig</string>
+			<string>UICollectionViewFreezeLayout-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>72781EE690E957BF08CA0B3AA1E93DD6</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>71161B70AA43D9D5636A05E1C6AB0153</string>
+			<string>1D0CD3865CC1BD67F5A005CAF0DD4006</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -579,17 +563,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>741D88C0A484F9C84A78B2F55DCFFD27</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>UICollectionViewFreezeLayout.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>75072364890771852E5FAAAD8D8FA9E3</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -638,31 +611,44 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7D9033E3A54EC5123F6CEA7217C39ABF</key>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>867C898DF708B2C3BFF39BC56701A7B3</string>
+				<string>3AC2F307BF2EDAEF4D0F14017BD55A57</string>
+				<string>B7B80995527643776607AFFA75B91E24</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8374D9404406D33042DB20784F6B0F60</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>UICollectionViewFreezeLayout-umbrella.h</string>
+			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<key>867C898DF708B2C3BFF39BC56701A7B3</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>5DF3E04B83BB9AB5FC5CFA2162F6274D</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>3AC2F307BF2EDAEF4D0F14017BD55A57</string>
-				<string>B7B80995527643776607AFFA75B91E24</string>
+				<string>D6692DC6DE66EE7F10A45900C5607F9C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -692,13 +678,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8A1CDF642FCC40B85E54716005673448</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AAF9D1982B718CE69983DAF14DB3CA68</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>8B2AE3ED483B0A102726A87D8DA8FEC7</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -713,21 +692,6 @@
 			<string>Pods.framework</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>971BF3DEF83690FB6EEDCD28F1CC3078</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B542F430DDC4D50EB52F68B65CC7CF29</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>977577C045EDA9D9D1F46E2598D19FC7</key>
 		<dict>
@@ -769,29 +733,23 @@
 				</array>
 			</dict>
 		</dict>
-		<key>AAF9D1982B718CE69983DAF14DB3CA68</key>
+		<key>AC131A539CFDEA9D0F0184C52D7C5D6F</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>8374D9404406D33042DB20784F6B0F60</string>
+				<string>FE472AD73A119F088160BE6D20D770CC</string>
+				<string>1D0CD3865CC1BD67F5A005CAF0DD4006</string>
+				<string>69EF0CE63A9CD547AA73C2D5B1FE7031</string>
+				<string>4FE503E609D8F23D9050AF5C82A0505E</string>
+				<string>092F8D716281D6A64CE37E0AD78CE896</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
 			<key>path</key>
-			<string>UICollectionViewFreezeLayout-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B542F430DDC4D50EB52F68B65CC7CF29</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UICollectionViewFreezeLayout.swift</string>
+			<string>../Target Support Files/UICollectionViewFreezeLayout</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -841,7 +799,7 @@
 		<key>BD4840EF587E298AB4DB594D367A68AA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7D9033E3A54EC5123F6CEA7217C39ABF</string>
+			<string>092F8D716281D6A64CE37E0AD78CE896</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -878,26 +836,13 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CD409C8617B7DA5667477F186031B30F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>CDFF3B93734C8947F08E8075A5CF0ABA</key>
 		<dict>
 			<key>buildConfigurationList</key>
 			<string>FD5829D94A9C1F532442338F986BE1E4</string>
 			<key>buildPhases</key>
 			<array>
-				<string>D6820C27A85F551A5CECA2C17E9EFAAA</string>
+				<string>EAE7040BC3F0D0592158D51916B46CB3</string>
 				<string>3DB643C1C0AABA2F2B12E5FB906C42B5</string>
 				<string>541BBDA1BD80D59143215117DB9EBC24</string>
 			</array>
@@ -988,19 +933,21 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>D6820C27A85F551A5CECA2C17E9EFAAA</key>
+		<key>D6692DC6DE66EE7F10A45900C5607F9C</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>children</key>
 			<array>
-				<string>8A1CDF642FCC40B85E54716005673448</string>
-				<string>4ADD706E2C912A2013EADAEEFC58158B</string>
+				<string>117FB5D1ADD609F23EF66126FEE34C74</string>
+				<string>AC131A539CFDEA9D0F0184C52D7C5D6F</string>
 			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>UICollectionViewFreezeLayout</string>
+			<key>path</key>
+			<string>UICollectionViewFreezeLayout</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DA312349A49333542E6F4B36B329960E</key>
 		<dict>
@@ -1068,10 +1015,24 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>EAE7040BC3F0D0592158D51916B46CB3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3366753C711164071304A35F223254DA</string>
+				<string>54F95202E697AE5BACF0B154D3688532</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>F772FD4641FEA49378171F63F2922114</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>71161B70AA43D9D5636A05E1C6AB0153</string>
+			<string>1D0CD3865CC1BD67F5A005CAF0DD4006</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1137,6 +1098,17 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
+		</dict>
+		<key>FE472AD73A119F088160BE6D20D770CC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>UICollectionViewFreezeLayout.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
