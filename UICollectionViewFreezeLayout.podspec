@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UICollectionViewFreezeLayout'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A layout that can set freeze coloums number and row numbers in UICollectionView., and scroll both Horizontal and Vertical direct.'
 
 # This description is used to generate tags and improve search results.
