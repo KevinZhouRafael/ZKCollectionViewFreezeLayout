@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UICollectionViewFreezeLayout'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A layout that can set freeze coloums number and row numbers in UICollectionView., and scroll both Horizontal and Vertical direct.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Can set freeze coloums numbers and rows numbers.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rafael zhou' => 'wumingapie@gmail.com' }
   s.source           = { :git => 'https://github.com/KevinChouRafael/UICollectionViewFreezeLayout.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/wumingapie'
+  s.social_media_url = 'https://twitter.com/wumingapie'
 
   s.ios.deployment_target = '8.0'
 
