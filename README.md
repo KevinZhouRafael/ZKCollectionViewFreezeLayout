@@ -9,9 +9,9 @@
 
 The UICollectionViewFreezeLayout extends UICollectionViewLayout. 
 
-Support both Horizontal and Vertical scroll direct.
+Support both `Horizontal` and `Vertical` scroll direct.
 
-Can set freeze coloums numbers and rows numbers.
+Can set `freeze` coloums numbers and rows numbers.
 
 
 
@@ -19,7 +19,7 @@ Can set freeze coloums numbers and rows numbers.
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-The `Spring` class also serves as an example of how some of the internal components of the framework can be composed to build new components.
+The example codes looks like.
 
 ```swift
 let layout = UICollectionViewFreezeLayout()
@@ -34,9 +34,11 @@ collectionView.backgroundColor = UIColor.whiteColor()
 collectionView.bounces = false
 ```
 
-![Simple image](collectionFreezeLayout.gif)
+![Simple image](https://raw.githubusercontent.com/KevinChouRafael/UICollectionViewFreezeLayout/master/collectionFreezeLayout.gif)
 
 ## Requirements
+- iOS 8.0+
+- Xcode 7.1+
 
 ## Installation
 
