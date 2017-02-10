@@ -1,8 +1,8 @@
 use_frameworks!
 
-pod 'UICollectionViewFreezeLayout', :path => '../'
-
-#pod "UICollectionViewFreezeLayout"
-
-
     
+target 'Example' do
+  
+  pod 'UICollectionViewFreezeLayout', :path => '../'
+
+end

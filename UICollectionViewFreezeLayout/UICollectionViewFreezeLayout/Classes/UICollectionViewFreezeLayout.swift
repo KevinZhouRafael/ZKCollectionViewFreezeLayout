@@ -1,32 +1,54 @@
 //
 //  UICollectionViewFreezeLayout.swift
-//  Waka
 //
 //  Created by rafael on 5/6/16.
-//  Copyright © 2016 Waka. All rights reserved.
+//  Copyright © 2016 Rafael. All rights reserved.
 //
 
 import UIKit
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 @objc public protocol UICollectionViewFreezeLayoutDelegate : UICollectionViewDelegate {
     
-    @objc optional func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
+    @objc optional func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize
     
-    @objc optional func contentSize(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout) -> CGSize
+    @objc optional func contentSize(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout) -> CGSize
     
 }
-@objc public class UICollectionViewFreezeLayout: UICollectionViewLayout {
+@objc open class UICollectionViewFreezeLayout: UICollectionViewLayout {
     
 
     // default Size of the cell
-    public var itemSize:CGSize = CGSize(width: 50, height: 50)
+    open var itemSize:CGSize = CGSize(width: 50, height: 50)
     
     
-    private var cellAttrsDictionary = Dictionary<NSIndexPath, UICollectionViewLayoutAttributes>()
-    private var cellAttrsDictionaryConst = Dictionary<NSIndexPath, UICollectionViewLayoutAttributes>() //初始化后，拖动也不会变的数据。用来保存初始布局。
-    
-    public var freezeColum:Int = 1
-    public var freezeRow:Int = 1
+    fileprivate var cellAttrsDictionary = Dictionary<IndexPath, UICollectionViewLayoutAttributes>()
+    fileprivate var cellAttrsDictionaryConst = Dictionary<IndexPath, UICollectionViewLayoutAttributes>()
+    open var freezeColum:Int = 1
+    open var freezeRow:Int = 1
     
     // Defines the size of the area the user can move around in
     // within the collection view.
@@ -37,13 +59,13 @@ import UIKit
     // this value if an update was performed.
     var dataSourceDidUpdate = true
     
-    public weak var delegate:UICollectionViewFreezeLayoutDelegate?
+    open weak var delegate:UICollectionViewFreezeLayoutDelegate?
     
-    override  public func collectionViewContentSize() -> CGSize {
+    override  open var collectionViewContentSize : CGSize {
         return self.contentSize
     }
     
-    override public func prepareLayout() {
+    override open func prepare() {
         
         // Only update header cells.
         if !dataSourceDidUpdate {
@@ -52,17 +74,17 @@ import UIKit
             let xOffset = collectionView!.contentOffset.x
             let yOffset = collectionView!.contentOffset.y
             
-            if collectionView?.numberOfSections() > 0 {
-                for section in 0...collectionView!.numberOfSections()-1 {
+            if collectionView?.numberOfSections > 0 {
+                for section in 0...collectionView!.numberOfSections-1 {
                     
-                    if collectionView?.numberOfItemsInSection(section) > 0 {
+                    if collectionView?.numberOfItems(inSection: section) > 0 {
                         
                         // Update all items with freeze
                         
-                        for item in 0...collectionView!.numberOfItemsInSection(section)-1 {
+                        for item in 0...collectionView!.numberOfItems(inSection: section)-1 {
                             
                             if section < freezeRow && item < freezeColum {
-                                let indexPath = NSIndexPath(forItem: item, inSection: section)
+                                let indexPath = IndexPath(item: item, section: section)
                                 if let attrs = cellAttrsDictionary[indexPath] {
                                     var frame = attrs.frame
                                     frame.origin.x = xOffset + cellAttrsDictionaryConst[indexPath]!.frame.origin.x
@@ -73,7 +95,7 @@ import UIKit
                             }else if section < freezeRow {
                                 // Build indexPath to get attributes from dictionary.
                                 
-                                let indexPath = NSIndexPath(forItem: item, inSection: section)
+                                let indexPath = IndexPath(item: item, section: section)
                                 // Update y-position to follow user.
                                 if let attrs = cellAttrsDictionary[indexPath] {
                                     var frame = attrs.frame
@@ -84,7 +106,7 @@ import UIKit
                                 
                             }else if item < freezeColum {
                                 // Build indexPath to get attributes from dictionary.
-                                let indexPath = NSIndexPath(forItem: item, inSection: section)
+                                let indexPath = IndexPath(item: item, section: section)
                                 
                                 // Update x-position to follow user.
                                 if let attrs = cellAttrsDictionary[indexPath] {
@@ -113,19 +135,19 @@ import UIKit
         dataSourceDidUpdate = false
         
         // Cycle through each section of the data source.
-        if collectionView?.numberOfSections() > 0 {
-            for section in 0...collectionView!.numberOfSections()-1 {
+        if collectionView?.numberOfSections > 0 {
+            for section in 0...collectionView!.numberOfSections-1 {
                 
                 // Cycle through each item in the section.
-                if collectionView?.numberOfItemsInSection(section) > 0 {
+                if collectionView?.numberOfItems(inSection: section) > 0 {
                     
                     var xPos:CGFloat = 0
                     var yPos:CGFloat = 0
                     
-                    for item in 0...collectionView!.numberOfItemsInSection(section)-1 {
+                    for item in 0...collectionView!.numberOfItems(inSection: section)-1 {
                         
                         // Build the UICollectionVieLayoutAttributes for the cell.
-                        let cellIndex = NSIndexPath(forItem: item, inSection: section)
+                        let cellIndex = IndexPath(item: item, section: section)
                         //                        let xPos = CGFloat(item) * getItemSize(cellIndex).width
                         //                        let yPos = CGFloat(section) * getItemSize(cellIndex).height
                         
@@ -133,7 +155,7 @@ import UIKit
                         yPos =  CGFloat(section) * getItemSize(cellIndex).height
                         
                         
-                        let cellAttributes = UICollectionViewLayoutAttributes(forCellWithIndexPath: cellIndex)
+                        let cellAttributes = UICollectionViewLayoutAttributes(forCellWith: cellIndex)
                         cellAttributes.frame = CGRect(x: xPos, y: yPos, width: getItemSize(cellIndex).width, height: getItemSize(cellIndex).height)
                         
                         // Determine zIndex based on cell type.
@@ -163,14 +185,14 @@ import UIKit
         
     }
     
-    override public func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    override open func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         
         // Create an array to hold all elements found in our current view.
         var attributesInRect = [UICollectionViewLayoutAttributes]()
         
         // Check each element to see if it should be returned.
         for cellAttributes in cellAttrsDictionary.values {
-            if CGRectIntersectsRect(rect, cellAttributes.frame) {
+            if rect.intersects(cellAttributes.frame) {
                 attributesInRect.append(cellAttributes)
             }
         }
@@ -179,18 +201,18 @@ import UIKit
         return attributesInRect
     }
     
-    override public func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
+    override open func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return cellAttrsDictionary[indexPath]!
     }
     
-    override public func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
+    override open func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         return true
     }
     
     
     
-    func getItemSize(indexPath:NSIndexPath)->CGSize{
-        if delegate != nil && (delegate!.respondsToSelector(#selector(UICollectionViewFreezeLayoutDelegate.collectionView(_:layout:sizeForItemAtIndexPath:)))) {
+    func getItemSize(_ indexPath:IndexPath)->CGSize{
+        if delegate != nil && (delegate!.responds(to: #selector(UICollectionViewFreezeLayoutDelegate.collectionView(_:layout:sizeForItemAtIndexPath:)))) {
             return (delegate!.collectionView!(collectionView!, layout: self, sizeForItemAtIndexPath: indexPath))
         }else{
             return itemSize
@@ -199,14 +221,14 @@ import UIKit
     
     func updateContentSize(){
         
-        if delegate != nil && (delegate!.respondsToSelector(#selector(UICollectionViewFreezeLayoutDelegate.contentSize(_:layout:)))) {
+        if delegate != nil && (delegate!.responds(to: #selector(UICollectionViewFreezeLayoutDelegate.contentSize(_:layout:)))) {
             self.contentSize = delegate!.contentSize!(collectionView!, layout: self)
         }else{
-            let contentHeight = CGFloat(collectionView!.numberOfSections()) * itemSize.height
+            let contentHeight = CGFloat(collectionView!.numberOfSections) * itemSize.height
             
             var contentWidth:CGFloat = 0.0
-            if collectionView!.numberOfSections() > 0 {
-                contentWidth = CGFloat(collectionView!.numberOfItemsInSection(0)) * itemSize.width
+            if collectionView!.numberOfSections > 0 {
+                contentWidth = CGFloat(collectionView!.numberOfItems(inSection: 0)) * itemSize.width
             }
             
             self.contentSize = CGSize(width: contentWidth, height: contentHeight)
