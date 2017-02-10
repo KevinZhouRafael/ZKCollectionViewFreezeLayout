@@ -39,6 +39,7 @@ collectionView.bounces = false
 ## Requirements
 - iOS 8.0+
 - Xcode 7.1+
+- Swift 3.0+
 
 ## Installation
 
