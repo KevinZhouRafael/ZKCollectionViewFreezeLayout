@@ -34,7 +34,7 @@ collectionView.backgroundColor = UIColor.whiteColor()
 collectionView.bounces = false
 ```
 
-![Simple image](https://raw.githubusercontent.com/KevinChouRafael/UICollectionViewFreezeLayout/master/collectionFreezeLayout.gif)
+![Simple image](https://raw.githubusercontent.com/KevinZhouRafael/UICollectionViewFreezeLayout/master/collectionFreezeLayout.gif)
 
 ## Requirements
 - iOS 8.0+
