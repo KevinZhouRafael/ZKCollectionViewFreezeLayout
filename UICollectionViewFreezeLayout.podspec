@@ -25,11 +25,11 @@ Support both Horizontal and Vertical scroll direct.
 Can set freeze coloums numbers and rows numbers.
                        DESC
 
-  s.homepage         = 'https://github.com/KevinChouRafael/UICollectionViewFreezeLayout'
+  s.homepage         = 'https://github.com/KevinZhouRafael/UICollectionViewFreezeLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rafael zhou' => 'wumingapie@gmail.com' }
-  s.source           = { :git => 'https://github.com/KevinChouRafael/UICollectionViewFreezeLayout.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/KevinZhouRafael/UICollectionViewFreezeLayout.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/wumingapie'
 
   s.ios.deployment_target = '8.0'
