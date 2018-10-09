@@ -1,5 +1,5 @@
 //
-//  UICollectionViewFreezeLayout.swift
+//  ZKCollectionViewFreezeLayout.swift
 //
 //  Created by rafael on 5/6/16.
 //  Copyright © 2016 Rafael. All rights reserved.
@@ -31,14 +31,14 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 }
 
 
-@objc public protocol UICollectionViewFreezeLayoutDelegate : UICollectionViewDelegate {
+@objc public protocol ZKCollectionViewFreezeLayoutDelegate : UICollectionViewDelegate {
     
     @objc optional func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize
     
     @objc optional func contentSize(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout) -> CGSize
     
 }
-@objc open class UICollectionViewFreezeLayout: UICollectionViewLayout {
+@objc open class ZKCollectionViewFreezeLayout: UICollectionViewLayout {
     
 
     // default Size of the cell
@@ -59,7 +59,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     // this value if an update was performed.
     var dataSourceDidUpdate = true
     
-    open weak var delegate:UICollectionViewFreezeLayoutDelegate?
+    open weak var delegate:ZKCollectionViewFreezeLayoutDelegate?
     
     override  open var collectionViewContentSize : CGSize {
         return self.contentSize
@@ -212,7 +212,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     
     
     func getItemSize(_ indexPath:IndexPath)->CGSize{
-        if delegate != nil && (delegate!.responds(to: #selector(UICollectionViewFreezeLayoutDelegate.collectionView(_:layout:sizeForItemAtIndexPath:)))) {
+        if delegate != nil && (delegate!.responds(to: #selector(ZKCollectionViewFreezeLayoutDelegate.collectionView(_:layout:sizeForItemAtIndexPath:)))) {
             return (delegate!.collectionView!(collectionView!, layout: self, sizeForItemAtIndexPath: indexPath))
         }else{
             return itemSize
@@ -221,7 +221,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     
     func updateContentSize(){
         
-        if delegate != nil && (delegate!.responds(to: #selector(UICollectionViewFreezeLayoutDelegate.contentSize(_:layout:)))) {
+        if delegate != nil && (delegate!.responds(to: #selector(ZKCollectionViewFreezeLayoutDelegate.contentSize(_:layout:)))) {
             self.contentSize = delegate!.contentSize!(collectionView!, layout: self)
         }else{
             let contentHeight = CGFloat(collectionView!.numberOfSections) * itemSize.height

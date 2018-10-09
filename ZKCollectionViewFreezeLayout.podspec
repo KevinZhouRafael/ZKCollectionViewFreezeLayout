@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint UICollectionViewFreezeLayout.podspec' to ensure this is a
+# Be sure to run `pod lib lint ZKCollectionViewFreezeLayout.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'UICollectionViewFreezeLayout'
-  s.version          = '0.1.5'
+  s.name             = 'ZKCollectionViewFreezeLayout'
+  s.version          = '0.1.6'
   s.summary          = 'A layout that can set freeze coloums number and row numbers in UICollectionView., and scroll both Horizontal and Vertical direct.'
 
 # This description is used to generate tags and improve search results.
@@ -18,26 +18,26 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-The UICollectionViewFreezeLayout extends UICollectionViewLayout.
+The ZKCollectionViewFreezeLayout extends UICollectionViewLayout.
 
 Support both Horizontal and Vertical scroll direct.
 
 Can set freeze coloums numbers and rows numbers.
                        DESC
 
-  s.homepage         = 'https://github.com/KevinZhouRafael/UICollectionViewFreezeLayout'
+  s.homepage         = 'https://github.com/KevinZhouRafael/ZKCollectionViewFreezeLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rafael zhou' => 'wumingapie@gmail.com' }
-  s.source           = { :git => 'https://github.com/KevinZhouRafael/UICollectionViewFreezeLayout.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/KevinZhouRafael/ZKCollectionViewFreezeLayout.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/wumingapie'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'UICollectionViewFreezeLayout/UICollectionViewFreezeLayout/Classes/**/*'
+  s.source_files = 'ZKCollectionViewFreezeLayout/ZKCollectionViewFreezeLayout/Classes/**/*'
   
   # s.resource_bundles = {
-  #   'UICollectionViewFreezeLayout' => ['UICollectionViewFreezeLayout/Assets/*.png']
+  #   'ZKCollectionViewFreezeLayout' => ['ZKCollectionViewFreezeLayout/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

@@ -1,13 +1,12 @@
-# UICollectionViewFreezeLayout
+# ZKCollectionViewFreezeLayout
 
-[![CI Status](http://img.shields.io/travis/rafael zhou/UICollectionViewFreezeLayout.svg?style=flat)](https://travis-ci.org/rafael zhou/UICollectionViewFreezeLayout)
-[![Version](https://img.shields.io/cocoapods/v/UICollectionViewFreezeLayout.svg?style=flat)](http://cocoapods.org/pods/UICollectionViewFreezeLayout)
-[![License](https://img.shields.io/cocoapods/l/UICollectionViewFreezeLayout.svg?style=flat)](http://cocoapods.org/pods/UICollectionViewFreezeLayout)
-[![Platform](https://img.shields.io/cocoapods/p/UICollectionViewFreezeLayout.svg?style=flat)](http://cocoapods.org/pods/UICollectionViewFreezeLayout)
+[![Version](https://img.shields.io/cocoapods/v/ZKCollectionViewFreezeLayout.svg?style=flat)](http://cocoapods.org/pods/ZKCollectionViewFreezeLayout)
+[![License](https://img.shields.io/cocoapods/l/ZKCollectionViewFreezeLayout.svg?style=flat)](http://cocoapods.org/pods/ZKCollectionViewFreezeLayout)
+[![Platform](https://img.shields.io/cocoapods/p/ZKCollectionViewFreezeLayout.svg?style=flat)](http://cocoapods.org/pods/ZKCollectionViewFreezeLayout)
 
 ## Description
 
-The UICollectionViewFreezeLayout extends UICollectionViewLayout. 
+The ZKCollectionViewFreezeLayout extends UICollectionViewLayout. 
 
 Support both `Horizontal` and `Vertical` scroll direct.
 
@@ -22,7 +21,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 The example codes looks like.
 
 ```swift
-let layout = UICollectionViewFreezeLayout()
+let layout = ZKCollectionViewFreezeLayout()
 layout.delegate = self
 layout.freezeColum = 3
 layout.freezeRow = 2
@@ -34,20 +33,20 @@ collectionView.backgroundColor = UIColor.whiteColor()
 collectionView.bounces = false
 ```
 
-![Simple image](https://raw.githubusercontent.com/KevinZhouRafael/UICollectionViewFreezeLayout/master/collectionFreezeLayout.gif)
+![Simple image](https://raw.githubusercontent.com/KevinZhouRafael/ZKCollectionViewFreezeLayout/master/collectionFreezeLayout.gif)
 
 ## Requirements
 - iOS 8.0+
-- Xcode 7.1+
-- Swift 3.0+
+- Xcode 10
+- Swift 4.2
 
 ## Installation
 
-UICollectionViewFreezeLayout is available through [CocoaPods](http://cocoapods.org). To install
+ZKCollectionViewFreezeLayout is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "UICollectionViewFreezeLayout"
+pod "ZKCollectionViewFreezeLayout"
 ```
 
 ## Author
@@ -61,4 +60,4 @@ Rafael Zhou
 
 ## License
 
-UICollectionViewFreezeLayout is available under the MIT license. See the LICENSE file for more info.
+ZKCollectionViewFreezeLayout is available under the MIT license. See the LICENSE file for more info.
