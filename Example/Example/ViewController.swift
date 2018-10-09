@@ -1,13 +1,13 @@
 //
 //  ViewController.swift
-//  UICollectionViewFreezeLayout
+//  ZKCollectionViewFreezeLayout
 //
 //  Created by rafael zhou on 07/18/2016.
 //  Copyright (c) 2016 rafael zhou. All rights reserved.
 //
 
 import UIKit
-import UICollectionViewFreezeLayout
+import ZKCollectionViewFreezeLayout
 
 
 let FREEZE_COLUM = 3
@@ -19,7 +19,7 @@ class Model {
     
 }
 
-class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewFreezeLayoutDelegate {
+class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,ZKCollectionViewFreezeLayoutDelegate {
 
     var models:[[Model]] = [[Model]]()
     
@@ -44,7 +44,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             models.append(modelArray)
         }
         
-        let layout = UICollectionViewFreezeLayout()
+        let layout = ZKCollectionViewFreezeLayout()
         layout.delegate = self
         layout.freezeColum = FREEZE_COLUM
         layout.freezeRow = FREEZE_ROW

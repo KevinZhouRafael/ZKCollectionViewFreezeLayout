@@ -1,6 +1,6 @@
 //
 //  CollectionViewCell.swift
-//  UICollectionViewFreezeLayout
+//  ZKCollectionViewFreezeLayout
 //
 //  Created by rafael on 7/18/16.
 //  Copyright © 2016 CocoaPods. All rights reserved.

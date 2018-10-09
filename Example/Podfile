@@ -3,6 +3,6 @@ use_frameworks!
     
 target 'Example' do
   
-  pod 'UICollectionViewFreezeLayout', :path => '../'
+  pod 'ZKCollectionViewFreezeLayout', :path => '../'
 
 end
